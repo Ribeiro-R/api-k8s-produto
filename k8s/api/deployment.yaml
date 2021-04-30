@@ -36,7 +36,8 @@ spec:
   - port: 80
     targetPort: 8080
     nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
 
 # kubectl apply -f ./k8s/api/deployment.yaml
 # kube ctl get all
+# type: NodePort caso local
